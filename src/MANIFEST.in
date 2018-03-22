@@ -1,3 +1,2 @@
 include *.pyx
-
-recursive-include ../ *
+include *.h
