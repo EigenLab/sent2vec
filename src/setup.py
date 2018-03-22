@@ -24,7 +24,7 @@ ext=[Extension('*',
 
 setup(
   name='sent2vec',
-  ext_modules=cythonize("sent2vec.pyx")
+  ext_modules=cythonize(ext)
 )
 
 
