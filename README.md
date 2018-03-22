@@ -1,4 +1,10 @@
 # sent2vec
+
+# 说明
+这是fork了sent2vec仓库，用来做成package放到eigen自己的仓库中。
+
+为了使得其能够distribute，在src中加入了MANIFEST.in从而能够包含.pyx和.h文件。测试后有效。
+
 TLDR: This library delivers numerical representations (features) for short texts or sentences, which can be used as input to any machine learning task later on. Think of it as an unsupervised version of [FastText](https://github.com/facebookresearch/fastText), and an extension of word2vec (CBOW) to sentences.
 
 The method uses a simple but efficient unsupervised objective to train distributed representations of sentences. The algorithm outperforms the state-of-the-art unsupervised models on most benchmark tasks, and on many tasks even beats supervised models, highlighting the robustness of the produced sentence embeddings, see [*the paper*](https://arxiv.org/abs/1703.02507) for more details.
